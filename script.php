@@ -9,6 +9,12 @@ $randomNumber = rand(1000, 9999);
 
 //Display the outputs
 echo "Current Time: " . $currentDateTime . "\n";
-echo "Random Number: " . $randomNumber;
+echo "Random Number: " . $randomNumber . "\n";
+
+if (file_put_contents($filePath, $randomNumber)) {
+    echo "File created successfully: $filePath\n";
+} else {
+    echo "Failed to create file: $filePath\n";
+}
 
 ?>
