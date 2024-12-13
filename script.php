@@ -11,12 +11,4 @@ $randomNumber = rand(1000, 9999);
 echo "Current Time: " . $currentDateTime . "\n";
 echo "Random Number: " . $randomNumber . "\n";
 
-$filePath = "a.txt";
-
-if (file_put_contents($filePath, $randomNumber)) {
-    echo "File created successfully: $filePath\n";
-} else {
-    echo "Failed to create file: $filePath\n";
-}
-
 ?>
